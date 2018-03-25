@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE6B5D9CD8EF0E2C894056E /* Pods_SymptoMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBE71FDCC694B64ECD237D5 /* Pods_SymptoMe.framework */; };
 		FAA6933C20681CFB00B84D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6933B20681CFB00B84D03 /* AppDelegate.swift */; };
 		FAA6933E20681CFB00B84D03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6933D20681CFB00B84D03 /* ViewController.swift */; };
 		FAA6934120681CFB00B84D03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6933F20681CFB00B84D03 /* Main.storyboard */; };
 		FAA6934320681CFB00B84D03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA6934220681CFB00B84D03 /* Assets.xcassets */; };
 		FAA6934620681CFB00B84D03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA6934420681CFB00B84D03 /* LaunchScreen.storyboard */; };
+		FAA6934E2068229000B84D03 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6934D2068229000B84D03 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		059AADBEAA6AC46909A4A905 /* Pods-SymptoMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymptoMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SymptoMe/Pods-SymptoMe.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4CD26776B8018DC50D89F9 /* Pods-SymptoMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SymptoMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SymptoMe/Pods-SymptoMe.release.xcconfig"; sourceTree = "<group>"; };
+		CFBE71FDCC694B64ECD237D5 /* Pods_SymptoMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SymptoMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6933820681CFB00B84D03 /* SymptoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymptoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA6933B20681CFB00B84D03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAA6933D20681CFB00B84D03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		FAA6934220681CFB00B84D03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAA6934520681CFB00B84D03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAA6934720681CFB00B84D03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA6934D2068229000B84D03 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE6B5D9CD8EF0E2C894056E /* Pods_SymptoMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF5AB30F0AA4E0DCED3AA93A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				059AADBEAA6AC46909A4A905 /* Pods-SymptoMe.debug.xcconfig */,
+				BF4CD26776B8018DC50D89F9 /* Pods-SymptoMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7061E0A78BCDA84A4FC58C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFBE71FDCC694B64ECD237D5 /* Pods_SymptoMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAA6932F20681CFB00B84D03 = {
 			isa = PBXGroup;
 			children = (
 				FAA6933A20681CFB00B84D03 /* SymptoMe */,
 				FAA6933920681CFB00B84D03 /* Products */,
+				AF5AB30F0AA4E0DCED3AA93A /* Pods */,
+				C7061E0A78BCDA84A4FC58C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				FAA6933B20681CFB00B84D03 /* AppDelegate.swift */,
 				FAA6933D20681CFB00B84D03 /* ViewController.swift */,
+				FAA6934D2068229000B84D03 /* ChartView.swift */,
 				FAA6933F20681CFB00B84D03 /* Main.storyboard */,
 				FAA6934220681CFB00B84D03 /* Assets.xcassets */,
 				FAA6934420681CFB00B84D03 /* LaunchScreen.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA6934A20681CFB00B84D03 /* Build configuration list for PBXNativeTarget "SymptoMe" */;
 			buildPhases = (
+				AD0A4263D79B475ADA227165 /* [CP] Check Pods Manifest.lock */,
 				FAA6933420681CFB00B84D03 /* Sources */,
 				FAA6933520681CFB00B84D03 /* Frameworks */,
 				FAA6933620681CFB00B84D03 /* Resources */,
+				62852C5366A229BCF739B318 /* [CP] Embed Pods Frameworks */,
+				37250459B935129807F63C8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37250459B935129807F63C8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SymptoMe/Pods-SymptoMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62852C5366A229BCF739B318 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SymptoMe/Pods-SymptoMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SymptoMe/Pods-SymptoMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD0A4263D79B475ADA227165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SymptoMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAA6933420681CFB00B84D03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +226,7 @@
 			files = (
 				FAA6933E20681CFB00B84D03 /* ViewController.swift in Sources */,
 				FAA6933C20681CFB00B84D03 /* AppDelegate.swift in Sources */,
+				FAA6934E2068229000B84D03 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +361,7 @@
 		};
 		FAA6934B20681CFB00B84D03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 059AADBEAA6AC46909A4A905 /* Pods-SymptoMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +376,7 @@
 		};
 		FAA6934C20681CFB00B84D03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF4CD26776B8018DC50D89F9 /* Pods-SymptoMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
