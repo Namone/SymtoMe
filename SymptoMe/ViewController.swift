@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         
         if(userDefaults.object(forKey: "recordedValues") != nil) {
             recordedNumbers = userDefaults.object(forKey: "recordedValues") as! [String]
+        } else {
+            recordedNumbers = [];
+        }
+        
+        if(recordedNumbers != nil) {
+            print(recordedNumbers)
         }
     }
 
@@ -39,8 +45,10 @@ class ViewController: UIViewController {
     
     @IBAction func didClickRecord(_ sender: Any) {
         
-        let currentRating = rating.text!
-        recordedNumbers.append(currentRating)
+        guard let number = rating!.text else {
+            return
+        }
+        recordedNumbers.append(number)
         
         // Save it into local storage
         userDefaults.set(recordedNumbers, forKey: "recordedValues")
